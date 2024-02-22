@@ -7,7 +7,6 @@ const TemplateMixin = (superclass) => class extends superclass {
   }
 
   connectedCallback() {
-    super.connectedCallback()
     this.templateName = `${this.tagName.toLowerCase()}-template`
     const template = document.getElementById(this.templateName)
     if (template) {
